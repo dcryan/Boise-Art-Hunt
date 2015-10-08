@@ -13,6 +13,10 @@
 		401A51AE1AFECC8C0021B844 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401A51AD1AFECC8C0021B844 /* Images.xcassets */; };
 		401A51B11AFECC8C0021B844 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 401A51AF1AFECC8C0021B844 /* LaunchScreen.xib */; };
 		401A51BD1AFECC8C0021B844 /* Boise_Art_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A51BC1AFECC8C0021B844 /* Boise_Art_HuntTests.swift */; };
+		40333C0B1BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40333C071BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.jpg */; settings = {ASSET_TAGS = (); }; };
+		40333C0C1BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 40333C081BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.png */; settings = {ASSET_TAGS = (); }; };
+		40333C0D1BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 40333C091BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImage.png */; settings = {ASSET_TAGS = (); }; };
+		40333C0E1BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImageIPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 40333C0A1BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImageIPhone.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		401A51B61AFECC8C0021B844 /* Boise Art HuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boise Art HuntTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		401A51BB1AFECC8C0021B844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		401A51BC1AFECC8C0021B844 /* Boise_Art_HuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boise_Art_HuntTests.swift; sourceTree = "<group>"; };
+		40333C071BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BoiseArtHuntIcon.jpg; sourceTree = "<group>"; };
+		40333C081BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoiseArtHuntIcon.png; sourceTree = "<group>"; };
+		40333C091BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoiseArtHuntLaunchImage.png; sourceTree = "<group>"; };
+		40333C0A1BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImageIPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoiseArtHuntLaunchImageIPhone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 		401A51981AFECC8C0021B844 = {
 			isa = PBXGroup;
 			children = (
+				40333C071BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.jpg */,
+				40333C081BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.png */,
+				40333C091BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImage.png */,
+				40333C0A1BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImageIPhone.png */,
 				401A51A31AFECC8C0021B844 /* Boise Art Hunt */,
 				401A51B91AFECC8C0021B844 /* Boise Art HuntTests */,
 				401A51A21AFECC8C0021B844 /* Products */,
@@ -156,6 +168,8 @@
 		401A51991AFECC8C0021B844 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Daniel Ryan";
 				TargetAttributes = {
@@ -192,6 +206,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40333C0E1BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImageIPhone.png in Resources */,
+				40333C0B1BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.jpg in Resources */,
+				40333C0C1BC6E0EE00CFFBB2 /* BoiseArtHuntIcon.png in Resources */,
+				40333C0D1BC6E0EE00CFFBB2 /* BoiseArtHuntLaunchImage.png in Resources */,
 				401A51AC1AFECC8C0021B844 /* Main.storyboard in Resources */,
 				401A51B11AFECC8C0021B844 /* LaunchScreen.xib in Resources */,
 				401A51AE1AFECC8C0021B844 /* Images.xcassets in Resources */,
@@ -409,6 +427,7 @@
 				401A51C21AFECC8C0021B844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		401A51C31AFECC8C0021B844 /* Build configuration list for PBXNativeTarget "Boise Art HuntTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +436,7 @@
 				401A51C51AFECC8C0021B844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

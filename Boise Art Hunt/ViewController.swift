@@ -17,15 +17,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        var latitude:CLLocationDegrees = 43.6167
-        var longitude:CLLocationDegrees = -116.2000
-        var latDelta:CLLocationDegrees = 0.1
-        var longDelta:CLLocationDegrees = 0.1
+        let latitude:CLLocationDegrees = 43.6167
+        let longitude:CLLocationDegrees = -116.2000
+        let latDelta:CLLocationDegrees = 0.1
+        let longDelta:CLLocationDegrees = 0.1
         
-        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
-        var coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
+        let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         
-        var region:MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
         
         myMap.setRegion(region, animated: true)
         
@@ -36,11 +36,11 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func action(gestureRecognizer:UIGestureRecognizer)
     {
         
-        var touchPoint = gestureRecognizer.locationInView(self.myMap)
+        let touchPoint = gestureRecognizer.locationInView(self.myMap)
         
-        var newCoordinate: CLLocationCoordinate2D = self.myMap.convertPoint(touchPoint, toCoordinateFromView: self.myMap)
+        let newCoordinate: CLLocationCoordinate2D = self.myMap.convertPoint(touchPoint, toCoordinateFromView: self.myMap)
         
-        var annotation = MKPointAnnotation()
+        let annotation = MKPointAnnotation()
         annotation.coordinate = newCoordinate
         annotation.title = "New"
         
@@ -58,7 +58,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error)
             in
             // we serialize our bytes back to the original JSON structure
-            let jsonResult: Dictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! Dictionary<String, AnyObject>
+            let jsonResult: Dictionary = (try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)) as! Dictionary<String, AnyObject>
             
             // we grab the colorsArray element
             let results: NSArray = jsonResult["features"] as! NSArray
